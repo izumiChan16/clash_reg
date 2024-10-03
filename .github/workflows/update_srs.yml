@@ -1,9 +1,9 @@
-name: Daily Update For Srs Files
+name: Python Package using Conda
 
 on:
   schedule:
-    - cron: '0 18 */3 * *' # Every 3 days at 2 AM UTC+8 is 18:00 UTC
-  workflow_dispatch: # Allows manual trigger
+    - cron: '0 18 */3 * *' # 每3天的 UTC+8 2:00 (即 UTC 18:00)
+  workflow_dispatch: # 允许手动触发
   push:
 
 jobs:
@@ -20,13 +20,18 @@ jobs:
         python-version: '3.10'
     - name: Add conda to system path
       run: |
-        # $CONDA is an environment variable pointing to the root of the miniconda directory
         echo $CONDA/bin >> $GITHUB_PATH
-        
     - name: Change directory to tools and run scripts
       run: |
         cd tools
         python list_json.py
         bash convert2srs.sh
-
-    
+    - name: Commit changes
+      run: |
+        git config --global user.name 'github-actions'
+        git config --global user.email 'github-actions@github.com'
+        git add temp_rules/
+        git commit -m 'Add downloaded files to temp_rules'
+        git push
+      env:
+        GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
