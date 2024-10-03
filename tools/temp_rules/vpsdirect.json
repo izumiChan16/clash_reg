@@ -1,0 +1,16 @@
+{
+  "version": 2,
+  "rules": [
+    {
+      "domain": [],
+      "domain_keyword": [
+        "leigod"
+      ],
+      "domain_suffix": [
+        "izxci.top",
+        "leigod.com"
+      ],
+      "ip_cidr": []
+    }
+  ]
+}

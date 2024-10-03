@@ -1,0 +1,22 @@
+{
+  "version": 2,
+  "rules": [
+    {
+      "domain": [],
+      "domain_keyword": [],
+      "domain_suffix": [
+        "javdb.com",
+        "jable.tv",
+        "pornhub.com",
+        "xvideo.com",
+        "missav.com",
+        "njav.tv",
+        "javlibrary.com",
+        "onlyfans.com",
+        "coomer.su",
+        "fansly.com"
+      ],
+      "ip_cidr": []
+    }
+  ]
+}
