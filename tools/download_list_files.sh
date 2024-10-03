@@ -12,7 +12,7 @@ fi
 mkdir "$DIR"
 
 # 读取文件中的链接并下载到指定文件夹
-for url in $(grep -o 'https://[^,]*' rulesets.txt); do
+for url in $(grep -o 'https://[^,]*' ~/rule/rulesets.txt); do
   wget -q -P "$DIR" "$url"
 done
 
