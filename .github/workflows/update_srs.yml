@@ -30,7 +30,7 @@ jobs:
       run: |
         git config --global user.name 'github-actions'
         git config --global user.email 'github-actions@github.com'
-        git add temp_rules/
+        git add .
         git commit -m 'Add downloaded files to temp_rules'
         git push
       env:
