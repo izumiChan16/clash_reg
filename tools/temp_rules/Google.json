@@ -1,0 +1,13 @@
+{
+  "version": 2,
+  "rules": [
+    {
+      "domain": [
+        "voice.telephony.goog"
+      ],
+      "domain_keyword": [],
+      "domain_suffix": [],
+      "ip_cidr": []
+    }
+  ]
+}

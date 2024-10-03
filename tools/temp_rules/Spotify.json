@@ -1,0 +1,18 @@
+{
+  "version": 2,
+  "rules": [
+    {
+      "domain": [
+        "audio4-ak-spotify-com.akamaized.net",
+        "cdn-spotify-experiments.conductrics.com",
+        "heads-ak-spotify-com.akamaized.net",
+        "spotify.com.edgesuite.net",
+        "spotify.map.fastly.net",
+        "spotify.map.fastlylb.net"
+      ],
+      "domain_keyword": [],
+      "domain_suffix": [],
+      "ip_cidr": []
+    }
+  ]
+}

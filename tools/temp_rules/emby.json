@@ -1,0 +1,15 @@
+{
+  "version": 2,
+  "rules": [
+    {
+      "domain": [
+        "e.niceduck.me",
+        "cf.niceduck.lol",
+        "dpxcdn.niceduck.lol"
+      ],
+      "domain_keyword": [],
+      "domain_suffix": [],
+      "ip_cidr": []
+    }
+  ]
+}

@@ -1,0 +1,13 @@
+{
+  "version": 2,
+  "rules": [
+    {
+      "domain": [
+        "apple.comscoreresearch.com"
+      ],
+      "domain_keyword": [],
+      "domain_suffix": [],
+      "ip_cidr": []
+    }
+  ]
+}

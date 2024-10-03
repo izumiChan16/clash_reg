@@ -1,0 +1,14 @@
+{
+  "version": 2,
+  "rules": [
+    {
+      "domain": [
+        "api.imem.app",
+        "api.swiftgram.app"
+      ],
+      "domain_keyword": [],
+      "domain_suffix": [],
+      "ip_cidr": []
+    }
+  ]
+}

@@ -1,0 +1,16 @@
+{
+  "version": 2,
+  "rules": [
+    {
+      "domain": [
+        "instant.arubanetworks.com",
+        "setmeup.arubanetworks.com",
+        "router.asus.com",
+        "www.asusrouter.com"
+      ],
+      "domain_keyword": [],
+      "domain_suffix": [],
+      "ip_cidr": []
+    }
+  ]
+}

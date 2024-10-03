@@ -1,0 +1,18 @@
+{
+  "version": 2,
+  "rules": [
+    {
+      "domain": [
+        "apiintl.biliapi.net",
+        "upos-hz-mirrorakam.akamaized.net",
+        "intel-cache.m.iqiyi.com",
+        "intel-cache.video.iqiyi.com",
+        "intl-rcd.iqiyi.com",
+        "intl-subscription.iqiyi.com"
+      ],
+      "domain_keyword": [],
+      "domain_suffix": [],
+      "ip_cidr": []
+    }
+  ]
+}
