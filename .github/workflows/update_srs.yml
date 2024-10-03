@@ -5,6 +5,8 @@ on:
     - cron: '0 18 */3 * *' # 每3天的 UTC+8 2:00 (即 UTC 18:00)
   workflow_dispatch: # 允许手动触发
   push:
+    paths:
+      - 'tools/**' # 仅在 tools 目录有变化时触发
 
 jobs:
   build-linux:
@@ -31,8 +33,9 @@ jobs:
         git config --global user.name 'github-actions'
         git config --global user.email 'github-actions@github.com'
         if [ -n "$(git status --porcelain)" ]; then
-          git add temp_rules/
-          git commit -m 'Add downloaded files to temp_rules'
+          git add tools/temp_rules/
+          git add tools/srs/
+          git commit -m 'Add downloaded files to temp_rules and srs'
           git push
         else
           echo "No changes to commit"
