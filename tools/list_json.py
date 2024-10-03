@@ -20,8 +20,15 @@ os.makedirs(temp_rules_dir, exist_ok=True)
 
 # Step 4: Function to parse individual rule files
 def parse_rules(file_content):
-    rule_types = ['domain', 'domain_keyword', 'domain_suffix', 'ip_cidr']
-    rules = {rule_type: [] for rule_type in rule_types}
+    # Use the original uppercase rule types from the file as keys in the mapping
+    rule_types_mapping = {
+        'DOMAIN': 'domain',
+        'DOMAIN-KEYWORD': 'domain_keyword',
+        'DOMAIN-SUFFIX': 'domain_suffix',
+        'IP-CIDR': 'ip_cidr'
+    }
+    
+    rules = {rule_type: [] for rule_type in rule_types_mapping.values()}
     
     for line in file_content.splitlines():
         line = line.strip()
@@ -30,14 +37,22 @@ def parse_rules(file_content):
         
         # Split the line based on comma
         parts = line.split(',')
-        rule_type = parts[0].lower()
-        domain_or_ip = parts[1]
-
-        # Store relevant types
-        if rule_type in rules:
-            rules[rule_type].append(domain_or_ip)
+        
+        # Check if the line has at least 2 parts
+        if len(parts) < 2:
+            continue
+        
+        # Directly use the uppercase rule type from the file
+        rule_type = parts[0].strip()
+        domain_or_ip = parts[1].strip()
+        
+        # Map the rule_type to the correct rules key if it exists in the mapping
+        if rule_type in rule_types_mapping:
+            mapped_key = rule_types_mapping[rule_type]
+            rules[mapped_key].append(domain_or_ip)
     
     return rules
+
 
 # Step 5: Download the files, parse them, and convert to JSON
 for url in urls:

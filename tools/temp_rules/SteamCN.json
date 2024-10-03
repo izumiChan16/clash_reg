@@ -17,7 +17,12 @@
         "xz.pphimalayanrt.com"
       ],
       "domain_keyword": [],
-      "domain_suffix": [],
+      "domain_suffix": [
+        "cm.steampowered.com",
+        "steamchina.com",
+        "steamcontent.com",
+        "steamusercontent.com"
+      ],
       "ip_cidr": []
     }
   ]

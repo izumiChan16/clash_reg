@@ -3,8 +3,12 @@
   "rules": [
     {
       "domain": [],
-      "domain_keyword": [],
-      "domain_suffix": [],
+      "domain_keyword": [
+        "aria2"
+      ],
+      "domain_suffix": [
+        "smtp"
+      ],
       "ip_cidr": []
     }
   ]

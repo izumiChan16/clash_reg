@@ -3,9 +3,20 @@
   "rules": [
     {
       "domain": [],
-      "domain_keyword": [],
-      "domain_suffix": [],
-      "ip_cidr": []
+      "domain_keyword": [
+        "mypikpak"
+      ],
+      "domain_suffix": [
+        "dlandroid.rcv.sandai.net",
+        "hub5idx.v6.shub.sandai.net",
+        "hub5pn.wap.sandai.net",
+        "hub5pnc.sandai.net",
+        "hub5pr.v6.phub.sandai.net",
+        "hubciddata.sandai.net"
+      ],
+      "ip_cidr": [
+        "8.208.0.0/12"
+      ]
     }
   ]
 }
