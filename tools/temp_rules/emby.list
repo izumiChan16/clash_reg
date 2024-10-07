@@ -117,6 +117,5 @@ DOMAIN-SUFFIX,netyi.cloud
 DOMAIN-SUFFIX,maoxiong.cloud
 DOMAIN-SUFFIX,pilipili.club
 DOMAIN-SUFFIX,aca.best
-DOMAIN,e.niceduck.me
-DOMAIN,cf.niceduck.lol
-DOMAIN,dpxcdn.niceduck.lol
+DOMAIN-SUFFIX,niceduck.me
+DOMAIN-SUFFIX,niceduck.lol

@@ -2,11 +2,7 @@
   "version": 2,
   "rules": [
     {
-      "domain": [
-        "e.niceduck.me",
-        "cf.niceduck.lol",
-        "dpxcdn.niceduck.lol"
-      ],
+      "domain": [],
       "domain_keyword": [],
       "domain_suffix": [
         "emby.nexitally.com",
@@ -125,7 +121,9 @@
         "netyi.cloud",
         "maoxiong.cloud",
         "pilipili.club",
-        "aca.best"
+        "aca.best",
+        "niceduck.me",
+        "niceduck.lol"
       ],
       "ip_cidr": [
         "188.172.228.49/32",
