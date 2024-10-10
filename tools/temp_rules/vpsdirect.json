@@ -2,7 +2,11 @@
   "version": 2,
   "rules": [
     {
-      "domain": [],
+      "domain": [
+        "frp-era.top",
+        "frp-art.top",
+        "frp-fix.top"
+      ],
       "domain_keyword": [
         "leigod"
       ],
