@@ -2,7 +2,9 @@
   "version": 2,
   "rules": [
     {
-      "domain": [],
+      "domain": [
+        "emby.aca.best"
+      ],
       "domain_keyword": [],
       "domain_suffix": [
         "emby.nexitally.com",
@@ -121,7 +123,6 @@
         "netyi.cloud",
         "maoxiong.cloud",
         "pilipili.club",
-        "aca.best",
         "niceduck.me",
         "niceduck.lol"
       ],
