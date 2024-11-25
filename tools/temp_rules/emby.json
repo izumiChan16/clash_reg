@@ -3,7 +3,8 @@
   "rules": [
     {
       "domain": [
-        "emby.aca.best"
+        "emby.aca.best",
+        "aca.misakaf.org"
       ],
       "domain_keyword": [],
       "domain_suffix": [
