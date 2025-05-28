@@ -12,6 +12,6 @@ DOMAIN-SUFFIX,javlibrary.com
 DOMAIN-SUFFIX,onlyfans.com
 DOMAIN-SUFFIX,coomer.su
 DOMAIN-SUFFIX,fansly.com
-DOMAIN-SUFFIX,adobe.io
+DOMAIN-REGEX,\\w{10}.adobe.io
 DOMAIN-SUFFIX,ic.adobe.io
-DOMAIN-SUFFIX,adobestats.io
+DOMAIN-REGEX,\\w{10}.adobestats.io
